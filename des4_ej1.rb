@@ -20,11 +20,11 @@ end
 class Student < Person
 
   def talk
-    puts "Aquí es la clase de programación con Ruby?"
+    "Aquí es la clase de programación con Ruby?"
   end
 
   def introduce
-    puts "Hola profesor. Mi nombre es #{@first_name} #{@last_name}."
+    "Hola profesor. Mi nombre es #{@first_name} #{@last_name}."
   end
 
 end
@@ -32,11 +32,11 @@ end
 class Teacher < Person
 
   def talk
-    puts "Bienvenidos a la clase de programación con Ruby!"
+    "Bienvenidos a la clase de programación con Ruby!"
   end
 
   def introduce
-    puts "Hola alumnos. Mi nombre es #{@first_name} #{@last_name}."
+    "Hola alumnos. Mi nombre es #{@first_name} #{@last_name}."
   end
 
 end
@@ -44,25 +44,25 @@ end
 class Parent < Person
 
   def talk
-    puts "Aquí es la reunión de apoderados?"
+    "Aquí es la reunión de apoderados?"
   end
 
   def introduce
-    puts "Hola. Soy uno de los apoderados. Mi nombre es #{@first_name} #{@last_name}."
+    "Hola. Soy uno de los apoderados. Mi nombre es #{@first_name} #{@last_name}."
   end
 
 end
 
 #Instanciando y probando
 padre = Parent.new("Antonio", "Carv", 54)
-padre.introduce
-padre.talk
+puts padre.introduce
+puts padre.talk
 
 profe = Teacher.new("Caro", "R", 27)
-profe.introduce
-profe.talk
+puts profe.introduce
+puts profe.talk
 
 estudiante = Student.new("Paz", "Carv", 30)
-estudiante.introduce
-estudiante.talk
+puts estudiante.introduce
+puts estudiante.talk
 
