@@ -18,6 +18,7 @@ end
 
 class Insecto
   include Alimentacion::Herbivoro
+  include Habilidades::Volador
 end
 
 class Pinguino < Ave
@@ -48,16 +49,15 @@ class Vaca < Mamifero
 end
 
 class Mosca < Insecto
-  include Habilidades::Volador
   include Alimentacion::Carnivoro
 end
 
-class Mariposa < Insecto
-  include Habilidades::Volador
+class Mariposa < Insecto 
+  #métodos añadidos en clase Insecto
 end
 
 class Abeja < Insecto
-  include Habilidades::Volador
+  #métodos añadidos en clase Insecto
 end
 
 #Instanciando y probando
